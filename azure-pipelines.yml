@@ -19,14 +19,25 @@ steps:
     configuration: 'Debug'
     xcodeVersion: '11'
 
+# - task: Xcode@5
+#   inputs:
+#     actions: 'archive'
+#     configuration: 'Debug'
+#     sdk: 'iphoneos'
+#     xcWorkspacePath: 'CocoaHeadsNL/CocoaHeadsNL.xcodeproj/project.xcworkspace'
+#     scheme: 'CocoaHeadsNL'
+#     packageApp: true
+#     archivePath: 'anils_archive'
+#     destinationPlatformOption: 'custom'
+#     destinationPlatform: 'iphoneos'
+
 - task: Xcode@5
   inputs:
     actions: 'archive'
-    configuration: 'Debug'
+    configuration: 'Release'
     sdk: 'iphoneos'
     xcWorkspacePath: 'CocoaHeadsNL/CocoaHeadsNL.xcodeproj/project.xcworkspace'
     scheme: 'CocoaHeadsNL'
     packageApp: true
-    archivePath: 'anils_archive'
-    destinationPlatformOption: 'custom'
-    destinationPlatform: 'iphoneos'
+    archivePath: 'anilsarchives'
+    exportPath: 'anils_export'
