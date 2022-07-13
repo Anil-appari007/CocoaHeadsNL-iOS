@@ -15,6 +15,18 @@ steps:
   inputs:
     actions: 'build'
     scheme: 'CocoaHeadsNL'
-    sdk: 'iphoneos'
+    sdk: '
     configuration: 'Debug'
     xcodeVersion: '11'
+
+- task: Xcode@5
+  inputs:
+    actions: 'archive'
+    configuration: 'Debug'
+    sdk: 'iphoneos'
+    xcWorkspacePath: '**/*.xcodeproj/CocoaHeadsNL.xcworkspace'
+    scheme: 'CocoaHeadsNL'
+    packageApp: true
+    archivePath: 'anils_archive'
+    destinationPlatformOption: 'custom'
+    destinationPlatform: 'iphoneos''
