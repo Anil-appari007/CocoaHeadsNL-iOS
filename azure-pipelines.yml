@@ -15,7 +15,7 @@ steps:
   inputs:
     actions: 'build'
     scheme: 'CocoaHeadsNL'
-    sdk: '
+    sdk: 'iphoneos'
     configuration: 'Debug'
     xcodeVersion: '11'
 
@@ -29,4 +29,4 @@ steps:
     packageApp: true
     archivePath: 'anils_archive'
     destinationPlatformOption: 'custom'
-    destinationPlatform: 'iphoneos''
+    destinationPlatform: 'iphoneos'
