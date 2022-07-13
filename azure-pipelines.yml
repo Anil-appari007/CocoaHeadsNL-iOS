@@ -24,7 +24,7 @@ steps:
     actions: 'archive'
     configuration: 'Debug'
     sdk: 'iphoneos'
-    xcWorkspacePath: '**/*.xcodeproj/CocoaHeadsNL.xcworkspace'
+    xcWorkspacePath: 'CocoaHeadsNL/CocoaHeadsNL.xcodeproj/project.xcworkspace'
     scheme: 'CocoaHeadsNL'
     packageApp: true
     archivePath: 'anils_archive'
